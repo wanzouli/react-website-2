@@ -3,7 +3,7 @@ export default function Navbar (){
         <a href="/" className="site-title"> Rawan Ghazouli's Portfolio </a>
         <ul>
             <li>
-               <a href="/Work"> Resume </a>
+               <a href="/Work"> Work </a>
             </li>
             <li>
                <a href="/About"> About </a>
