@@ -7,26 +7,40 @@ import Home from './pages/Home';
 // import {Home, About, Work} from './pages'
 
 
+// function App() {
+//   let component
+//   switch (window.location.pathname) {
+//     case "/":
+//       component = <Home/>
+//       break
+//     case "/Work":
+//       component = <Work/>
+//       break
+//     case "/About":
+//       component = <About/>
+//       break
+//   }
+//   return (
+//   <> 
+//     <Navbar />
+//     <div className='container'> {component}</div>
+//   </>
+//   ) 
+
+// }
+
 function App() {
-  let component
-  switch (window.location.pathname) {
-    case "/":
-      component = <Home/>
-      break
-    case "/Work":
-      component = <Work/>
-      break
-    case "/About":
-      component = <About/>
-      break
-  }
   return (
-  <> 
-    <Navbar />
-    <div className='container'> {component}</div>
-  </>
-  ) 
-
+    <BrowserRouter>
+      <Navbar />
+      <div className='container'>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/Work" element={<Work />} />
+          <Route path="/About" element={<About />} />
+        </Routes>
+      </div>
+    </BrowserRouter>
+  );
 }
-
 export default App;
