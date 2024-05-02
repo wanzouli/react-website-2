@@ -35,9 +35,9 @@ function App() {
       <Navbar />
       <div className='container'>
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/Work" element={<Work />} />
-          <Route path="/About" element={<About />} />
+          <Route path="/react-website-2/" element={<Home />} />
+          <Route path="/react-website-2/Work" element={<Work />} />
+          <Route path="/react-website-2/About" element={<About />} />
         </Routes>
       </div>
     </BrowserRouter>

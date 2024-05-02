@@ -1,12 +1,14 @@
+import { Link } from 'react-router-dom'
+
 export default function Navbar (){
     return <nav className="nav">
-        <a href="/" className="site-title"> Rawan Ghazouli's Portfolio </a>
+        <a href="/react-website-2" className="site-title"> Rawan Ghazouli's Portfolio </a>
         <ul>
             <li>
-               <a href="/Work"> Work </a>
+               <Link to="/react-website-2/Work"> Work </Link>
             </li>
             <li>
-               <a href="/About"> About </a>
+               <Link to="/react-website-2/About"> About </Link>
             </li>
         </ul>
     </nav>
